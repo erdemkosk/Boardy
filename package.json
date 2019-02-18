@@ -1,0 +1,40 @@
+{
+  "name": "boardy",
+  "version": "1.0.0",
+  "description": "A minimal Clipboard application ",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdemkosk/ClipBoard"
+  },
+  "keywords": [
+    "Clipboard",
+    "Saver",
+    "Boardy+"
+    
+  ],
+  "author": "Mustafa Erdem Köşk",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.3",
+    "electron-builder": "^20.38.5"
+  },
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "dependencies": {
+    "clipboardy": "^1.2.3",
+    "electron-clipboard-watcher": "^1.0.1",
+    "electron-store": "^2.0.0",
+    "electron-util": "^0.11.0",
+    "jquery": "^3.3.1",
+    "stringify-object": "^3.3.0"
+  }
+}
