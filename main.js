@@ -11,6 +11,12 @@ const {appMenu} = require('electron-util');
 const util= require('electron-util');
 const clipboardy = require('clipboardy');
 var totalNotificaitonCount=0;
+var AutoLaunch = require('auto-launch');
+ 
+var boardyAutoLauncher = new AutoLaunch({
+    name: 'Boardy',
+    path: '/Applications/boardy.app',
+});
 
 
 var path = require('path')
@@ -67,6 +73,7 @@ function createWindow() {
       
     }
     setMacOSBadge(totalNotificaitonCount);
+    //boardyAutoLauncher.enable();
   })
 
 

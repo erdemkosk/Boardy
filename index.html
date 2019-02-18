@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="ClipBoardy">
+  <meta name="description" content="Boardy">
   <meta name="author" content="MEK">
 
   <title>Boardy+</title>
@@ -63,14 +63,15 @@
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="http://www.instagram.com/mekcode" target="_blank">
-          <i class="fas fa-fw fa-camera"></i>
+       
+          <i class="fab fa-instagram"></i>
           <span>Mekcode</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="http://jetfiletransfer.erdemkosk.com/" target="_blank">
-          <i class="fas fa-fw fa-thumbs-up"></i>
+          <i class="fas fa-fw fa-laptop"></i>
           <span>Jet File Transfer</span></a>
       </li>
 
@@ -103,14 +104,14 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-8 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-               <div class="input-group-append">
+              <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-check-circle fa-sm"></i>
                 </button>
               </div>
               <input type="text" id="current" class="form-control bg-light border-0 small" placeholder="Currently selected..."
                 aria-label="Search" aria-describedby="basic-addon2" readonly>
-             
+
             </div>
           </form>
 
@@ -150,26 +151,7 @@
                 <img class="img-profile rounded-circle" src="./static/boardy-c.png">
                 <span class="badge badge-danger badge-counter" id="alert">0</span>
               </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
+
             </li>
 
           </ul>
@@ -225,11 +207,14 @@
                   <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
                 </div>
                 <div class="card-body">
-                  <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and
-                    poor page performance. Custom CSS classes are used to create custom components and custom utility
-                    classes.</p>
-                  <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap
-                    framework, especially the utility classes.</p>
+                  <p>Boardy is under development. We would appreciate if you can report any errors you encounter by e-mail!
+                   
+                    </p>
+                    <p class="mb-0"> Scheduled updates</p>
+                  <p class="mb-0"><strong>1) Adding copied images</strong> </p>
+                  <p class="mb-0"><strong>2) Replacement of copied data</strong></p>
+                  <p class="mb-0">Stay on track!</p>
+                  
                 </div>
               </div>
 
@@ -317,25 +302,25 @@
       var num = id.match(/\d+/);
       if (id.match("^copy")) {
         if (activeClipboardCount > 1) {
-       
+
           copyClipboardForUser(num);
           deleteSingleClipBoard(num);
-         
-         // var clickedObject = $('#item' + num);
-          
+
+          // var clickedObject = $('#item' + num);
+
           //var firstItem = $( "#clipboardText div:first-child" );
-        
+
           //var clickedData = "data" + (clickedObject.attr('id')).match(/\d+/);
           //var firstData = "data" + firstItem.attr('id').match(/\d+/);
           //alert(clickedData);
           //alert($('#' + clickedData).text());
-        
+
           //var saveData = $('#' +firstData).text();
-         
+
           //$('#' +firstData).text($('#' +clickedData).html());
           //$('#' +clickedData).text(saveData);
 
-         
+
 
 
           //alert('clicked ' + clickedObject.attr('id') + 'first ' + firstItem.attr('id') );
@@ -347,19 +332,19 @@
 
       }
       if (id.match("^delete")) {
-        
+
         deleteSingleClipBoard(num);
         showToastNotification('Deleted...', 'loading');
 
       }
       if (id == "clearAll") {
-        
+
         deleteAllClipBoard();
         showToastNotification('Deleted!', 'loading');
       }
 
     });
-     
+
     function copyClipboardForUser(num) {
 
       ipcRenderer.send('copy', $('#data' + num).text());
@@ -388,7 +373,7 @@
       );
       count++;
       $('#alert').text(activeClipboardCount);
-      
+
     }
 
     function deleteSingleClipBoard(num) {
@@ -399,7 +384,7 @@
     }
 
     function deleteAllClipBoard() {
-      activeClipboardCount=0;
+      activeClipboardCount = 0;
       ipcRenderer.send('clearAll');
       $('#alert').text(activeClipboardCount);
       $("[id]").each(function () {
@@ -417,12 +402,6 @@
 
       });
     }
-    function swap(node1, node2) {
-    const afterNode2 = node2.nextElementSibling;
-    const parent = node2.parentNode;
-    node1.replaceWith(node2);
-    parent.insertBefore(node1, afterNode2);
-}
   </script>
 
 

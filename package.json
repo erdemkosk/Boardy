@@ -17,7 +17,6 @@
     "Clipboard",
     "Saver",
     "Boardy+"
-    
   ],
   "author": "Mustafa Erdem Köşk",
   "license": "CC0-1.0",
@@ -30,6 +29,7 @@
   },
   "homepage": "https://github.com/electron/electron-quick-start#readme",
   "dependencies": {
+    "auto-launch": "^5.0.5",
     "clipboardy": "^1.2.3",
     "electron-clipboard-watcher": "^1.0.1",
     "electron-store": "^2.0.0",
