@@ -7,6 +7,7 @@ Boardy is easy to use **clipboard** application. Thanks to its easy interface, a
 
 When the application is open in the background, it keeps all your data safe for you. So you can control  all the clipboard system by using one click.
 
+<img src="https://i.ibb.co/tHPKX2Y/297d2e94-c1ba-420d-ba44-46a47dff3750.jpg" >
 
 
 # Work Hard, Dream High!
