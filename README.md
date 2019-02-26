@@ -1,5 +1,5 @@
 # Welcome to Boardy+!
-![enter image description here](http://i67.tinypic.com/28t3xg.png =100x100)
+<img src="http://i67.tinypic.com/28t3xg.png" width="100" height="100">
 
 Boardy is easy to use **clipboard** application. Thanks to its easy interface, all the data you save is stored with the program on the back!
 
