@@ -1,6 +1,28 @@
-# Boardy
+# Welcome to Boardy+!
+![enter image description here](http://i67.tinypic.com/28t3xg.png =100x100)
 
-**Minimal Clipboard application for every operating system!**
+Boardy is easy to use **clipboard** application. Thanks to its easy interface, all the data you save is stored with the program on the back!
 
-Boardy is easy to use clipboard application. Thanks to its easy interface, all the data you save is stored with the program on the back.
+# How To Use
+
+When the application is open in the background, it keeps all your data safe for you. So you can control  all the clipboard system by using one click.
+
+
+
+# Work Hard, Dream High!
+
+> Boardy+ is still in the process of development! **Thanks** for patience..
+> You can find more information about **Boardy+** [here](http://www.erdemkosk.com//)
+## Clipboard
+Below is the application's workspaces:
+
+|                |Save                        |Export|
+|----------------|-------------------------------|-----------------------------|
+|Text			|'Yes'            |'Yes'            |
+|Image			|"No"           |"No"            |
+
+
+
+
+```
 
